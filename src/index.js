@@ -36,6 +36,17 @@ app.get('/task2b', (req, res) => {
  	res.send(shortname);
 });
 
+/**
+	Try task 2C
+*/
+app.get('/task2c', (req, res) => {
+	const url = req.query.username;
+	const regular = new RegExp('@?(https?:)?(//)?(([a-z.])[^/]*/)?@?([a-zA-Z0-9._]*)', 'i');
+	const username = url.match(regular);
+
+	res.send(`@${username[5]}`);
+});
+
 app.listen(3000, () => {
   	console.log('Your app listening on port 3000!');
 });
