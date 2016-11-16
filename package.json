@@ -1,0 +1,24 @@
+{
+  "name": "skb",
+  "version": "0.0.2",
+  "description": "task3a",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --harmony -- index.js"
+  },
+  "keywords": [],
+  "author": "andygbox",
+  "license": "",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "express": "^4.14.0",
+    "isomorphic-fetch": "^2.2.1",
+    "mongoose": "^4.6.6"
+  }
+}
